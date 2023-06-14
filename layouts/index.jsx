@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
-import { chakra, Flex, Spinner, useDisclosure } from '@chakra-ui/react'
+import { chakra, Flex, Image, Spinner, useDisclosure } from '@chakra-ui/react'
 import Header from './header'
 import Sidebar from './sidebar'
 import Suspended from 'components/checkpoints/suspended'
@@ -33,13 +33,22 @@ const AppLayout = (props) => {
 
     if (status === 'loading') {
         return (
-            <Flex justify="center" align="center" h="100vh" w="full">
+            <Flex
+                position="relative"
+                justify="center"
+                align="center"
+                h="100vh"
+                w="full"
+            >
+                <Image alt="logo" src="/favicon.ico" h="8" w="8" />
+
                 <Spinner
-                    size="xl"
+                    position="absolute"
+                    boxSize={12}
                     thickness={2}
                     speed="0.8s"
                     emptyColor="canvas-1"
-                    color="brand.default"
+                    color="accent-1"
                 />
             </Flex>
         )
