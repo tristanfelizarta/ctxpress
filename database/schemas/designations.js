@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const DesignationSchema = Schema(
+const DesignationSchema = new Schema(
     {
         name: {
             type: String,

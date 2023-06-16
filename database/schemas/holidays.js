@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const HolidaySchema = Schema(
+const HolidaySchema = new Schema(
     {
         description: {
             type: String,

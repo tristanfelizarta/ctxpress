@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const LeaveSchema = Schema(
+const LeaveSchema = new Schema(
     {
         user: {
             id: {

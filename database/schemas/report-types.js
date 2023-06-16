@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const ReportTypeSchema = Schema(
+const ReportTypeSchema = new Schema(
     {
         name: {
             type: String,

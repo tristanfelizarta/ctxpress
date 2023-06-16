@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const AnnouncementSchema = Schema(
+const AnnouncementSchema = new Schema(
     {
         description: {
             type: String,

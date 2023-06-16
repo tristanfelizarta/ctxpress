@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const ReportSchema = Schema(
+const ReportSchema = new Schema(
     {
         user: {
             id: {

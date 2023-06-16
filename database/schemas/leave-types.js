@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const LeaveTypeSchema = Schema(
+const LeaveTypeSchema = new Schema(
     {
         name: {
             type: String,

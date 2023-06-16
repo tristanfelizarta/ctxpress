@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const RequestSchema = Schema(
+const RequestSchema = new Schema(
     {
         user: {
             id: {
